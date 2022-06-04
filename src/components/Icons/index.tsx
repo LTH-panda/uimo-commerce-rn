@@ -39,7 +39,7 @@ export {default as InfoIcon} from 'assets/icons/info.svg';
 export {default as LoaderIcon} from 'assets/icons/loader.svg';
 export {default as LocationIcon} from 'assets/icons/location.svg';
 export {default as LockIcon} from 'assets/icons/lock.svg';
-export {default as LogotypeIcon} from 'assets/icons/logoype.svg';
+export {default as LogotypeIcon} from 'assets/icons/logotype.svg';
 export {default as LogoutIcon} from 'assets/icons/logout.svg';
 export {default as MicroIcon} from 'assets/icons/micro.svg';
 export {default as MinusIcon} from 'assets/icons/minus.svg';
