@@ -11,7 +11,7 @@ function SearchBar() {
   return (
     <Pressable onPress={onPress}>
       <SearchBarBlock>
-        <TextInput style={{flex: 1}} ref={inputRef} />
+        <TextInput style={{flex: 1}} ref={inputRef} placeholder="Search" />
         <View style={{marginLeft: 'auto'}}>
           <SearchIcon fill="#9e9e9e" />
         </View>

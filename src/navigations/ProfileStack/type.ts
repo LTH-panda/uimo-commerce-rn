@@ -6,7 +6,7 @@ import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {MainTabNavigationProp} from 'navigations/MainTab/type';
 
 export type ProfileStackParamList = {
-  Profile: {user: User};
+  ProfileHome: {user: User};
   MyOrder: {userId: string};
   MyOrderDetail: {orderId: string};
   WriteReview: {orderId: string};
