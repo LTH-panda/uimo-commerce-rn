@@ -25,6 +25,7 @@ function ProductStroyList() {
       data={data}
       renderItem={renderItem}
       ItemSeparatorComponent={() => <View style={[styles.separator]} />}
+      keyExtractor={item => item.imageNumber.toString()}
     />
   );
 }

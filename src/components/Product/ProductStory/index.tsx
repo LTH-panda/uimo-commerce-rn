@@ -1,8 +1,9 @@
 /* eslint-disable global-require */
-import {Text, ImageBackground} from 'react-native';
+import {Text, ImageBackground, Pressable} from 'react-native';
 import React from 'react';
 import globalType from 'styles/global-typo';
 import globalLayout from 'styles/global-layout';
+import useNavigateCategory from 'hooks/useNavigateCategory';
 import {Inside, ProductStoryBlock} from './style';
 
 type ProductStoryProps = {
@@ -18,20 +19,24 @@ const imagePath: any = {
 };
 
 function ProductStory({imageNumber, insideText}: ProductStoryProps) {
+  const {onNavigateCategory} = useNavigateCategory();
+
   return (
-    <ProductStoryBlock>
-      <ImageBackground
-        source={imagePath[imageNumber]}
-        resizeMode="cover"
-        style={{width: '100%', height: '100%'}}
-        imageStyle={{borderRadius: 10}}>
-        <Inside style={[globalLayout.full]}>
-          <Text style={[globalType.tWhite, globalType.body1R]}>
-            {insideText}
-          </Text>
-        </Inside>
-      </ImageBackground>
-    </ProductStoryBlock>
+    <Pressable onPress={() => onNavigateCategory(insideText)}>
+      <ProductStoryBlock>
+        <ImageBackground
+          source={imagePath[imageNumber]}
+          resizeMode="cover"
+          style={{width: '100%', height: '100%'}}
+          imageStyle={{borderRadius: 10}}>
+          <Inside style={[globalLayout.full]}>
+            <Text style={[globalType.tWhite, globalType.body1R]}>
+              {insideText}
+            </Text>
+          </Inside>
+        </ImageBackground>
+      </ProductStoryBlock>
+    </Pressable>
   );
 }
 

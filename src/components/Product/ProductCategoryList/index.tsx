@@ -9,7 +9,13 @@ function ProductCategoryList() {
     {title: 'diging'},
   ];
 
-  return data.map(item => <ProductCategory title={item.title} />);
+  return (
+    <>
+      {data.map(item => (
+        <ProductCategory title={item.title} key={item.title} />
+      ))}
+    </>
+  );
 }
 
 export default ProductCategoryList;
