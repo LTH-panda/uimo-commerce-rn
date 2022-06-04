@@ -15,8 +15,8 @@ export type MainTabParamList = {
 };
 
 export type MainTabNavigationProp = CompositeNavigationProp<
-  RootStackNavigationProp,
-  BottomTabNavigationProp<MainTabParamList>
+  BottomTabNavigationProp<MainTabParamList>,
+  RootStackNavigationProp
 >;
 
 export type MainTabNavigationScreenParams =

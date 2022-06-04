@@ -16,7 +16,7 @@ const Stack = createNativeStackNavigator<ProfileStackParamList>();
 
 function ProfileStack() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen name="Profile" component={ProfileScreen} />
       <Stack.Screen name="MyOrder" component={MyOrderScreen} />
       <Stack.Screen name="MyOrderDetail" component={MyOrderDetailScreen} />

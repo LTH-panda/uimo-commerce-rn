@@ -10,7 +10,7 @@ const Tab = createBottomTabNavigator<MainTabParamList>();
 
 function MainTab() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator screenOptions={{headerShown: false}}>
       <Tab.Screen name="FeedStack" component={FeedStack} />
       <Tab.Screen name="Bag" component={BagScreen} />
       <Tab.Screen name="Like" component={LikeScreen} />

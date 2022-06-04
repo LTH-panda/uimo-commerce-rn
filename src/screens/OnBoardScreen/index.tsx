@@ -1,17 +1,21 @@
-import {View} from 'react-native';
 import React from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
+import {Title} from 'components/Shared';
+import globalLayout from 'styles/global-layout';
 import globalColor from 'styles/global-color';
-import {Header, SearchBar, TextField, Toast} from 'components/Shared';
+import {Text, View} from 'react-native';
+import globalType from 'styles/global-typo';
+import OnBoardActions from './OnBoardActions';
 
 function OnBoardScreen() {
   return (
-    <SafeAreaView style={[globalColor.white]}>
-      <View>
-        <SearchBar />
-        <TextField description="text" isError />
-        <Header back title="header" />
-        {/* <Toast /> */}
+    <SafeAreaView style={[globalLayout.full, globalColor.white]}>
+      <View style={[globalLayout.paddingVertical, globalLayout.full]}>
+        <Title title="ulmo" />
+        <View style={[globalLayout.padding, globalLayout.full]}>
+          <Text style={[globalType.body1R]}>commerce app</Text>
+        </View>
+        <OnBoardActions />
       </View>
     </SafeAreaView>
   );

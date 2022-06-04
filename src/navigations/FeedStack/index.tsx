@@ -9,7 +9,7 @@ const Stack = createNativeStackNavigator<FeedStackParamList>();
 
 function FeedStack() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen name="Room" component={RoomScreen} />
       <Stack.Screen name="Categories" component={CategoriesScreen} />
       <Stack.Screen name="Catalog" component={CatalogScreen} />

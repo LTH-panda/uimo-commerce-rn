@@ -41,6 +41,42 @@ const globalType = StyleSheet.create({
     fontSize: 16,
     fontWeight: '400',
   },
+  tBlack: {
+    color: '#212121',
+  },
+  tWhite: {
+    color: '#fff',
+  },
+  tGray5: {
+    color: '#9e9e9e',
+  },
+  tGray3: {
+    color: '#e0e0e0',
+  },
+  tYellow5: {
+    color: '#ffc107',
+  },
+  tYellow3: {
+    color: '#ffd54f',
+  },
+  tIndigo5: {
+    color: '#3f51b5',
+  },
+  tIndigo3: {
+    color: '#7986cb',
+  },
+  tRed5: {
+    color: '#f44336',
+  },
+  tRed3: {
+    color: '#e57373',
+  },
+  tGreen5: {
+    color: '#4caf50',
+  },
+  tGreen3: {
+    color: '#81c784',
+  },
 });
 
 export default globalType;
