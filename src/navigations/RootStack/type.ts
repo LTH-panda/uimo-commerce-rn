@@ -1,5 +1,4 @@
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
-import {AuthStackNavigationScreenParams} from 'navigations/AuthStack/type';
 
 export type RootStackParamList = {
   OnBoard: undefined;
