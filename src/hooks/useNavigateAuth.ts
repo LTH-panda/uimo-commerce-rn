@@ -6,7 +6,7 @@ export default function useNavigateAuth() {
   const navigation = useNavigation<RootStackNavigationProp>();
 
   const onNavigateRegister = useCallback(
-    () => navigation.navigate('AuthStack'),
+    () => navigation.navigate('Register'),
     [],
   );
   const onNavigateSignIn = useCallback(() => navigation.navigate('SignIn'), []);

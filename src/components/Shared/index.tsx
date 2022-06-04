@@ -5,3 +5,4 @@ export {default as TextField} from './TextField';
 export {default as Toast} from './Toast';
 export {default as Title} from './Title';
 export {default as BottomButton} from './BottomButton';
+export {default as BodyTemplate} from './BodyTemplate';
