@@ -5,3 +5,5 @@ export {default as ProductCategoryList} from './ProductCategoryList';
 export {default as ProductCardBig} from './ProductCardBig';
 export {default as ProductCardSmall} from './ProductCardSmall';
 export {default as ProductFilterActions} from './ProductFilterActions';
+export {default as ProductSort} from './ProductSort';
+export {default as ProductFilter} from './ProductFilter';

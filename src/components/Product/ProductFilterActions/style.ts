@@ -7,7 +7,7 @@ export const ProductFilterActionsBlock = styled.View`
   padding: 8px 0;
 `;
 
-export const ActionButton = styled.View`
+export const ActionButton = styled.Pressable`
   flex-direction: row;
   justify-content: center;
   align-items: center;
