@@ -1,5 +1,5 @@
 /* eslint-disable global-require */
-import {View, Text, Image} from 'react-native';
+import {Text, Image} from 'react-native';
 import React from 'react';
 import {ClearIcon} from 'components/Icons';
 import {

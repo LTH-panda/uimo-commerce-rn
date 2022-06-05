@@ -7,3 +7,4 @@ export {default as Title} from './Title';
 export {default as BottomButton} from './BottomButton';
 export {default as BodyTemplate} from './BodyTemplate';
 export {default as BottomModal} from './BottomModal';
+export {default as ActionHeader} from './ActionHeader';

@@ -1,25 +1,20 @@
-import {View, Text} from 'react-native';
-import React, {useState} from 'react';
-import {BottomModal, Button, Title} from 'components/Shared';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import {View} from 'react-native';
+import React from 'react';
+import {SafeAreaView, useSafeAreaInsets} from 'react-native-safe-area-context';
 import globalLayout from 'styles/global-layout';
 import globalColor from 'styles/global-color';
+import {ActionHeader} from 'components/Shared';
+import ProductImage from 'components/Product/ProductImage';
 
 function ProductScreen() {
-  const [visible, onVisible] = useState<boolean>(false);
-
+  const {top} = useSafeAreaInsets();
   return (
-    <SafeAreaView style={[globalLayout.full, globalColor.white]}>
-      <View>
-        <Button
-          text="visible"
-          onPress={() => onVisible(true)}
-          theme="primary"
-        />
-        <BottomModal visible={visible} onVisible={() => onVisible(false)}>
-          <Title title="sort by" />
-        </BottomModal>
-      </View>
+    <SafeAreaView
+      edges={['bottom']}
+      style={[globalLayout.full, globalColor.white]}>
+      <ProductImage />
+      <View style={{height: top}} />
+      <ActionHeader />
     </SafeAreaView>
   );
 }
